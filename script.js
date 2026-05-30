@@ -1621,6 +1621,7 @@ _j374 = {
 }
 window.gridCommitPrev = gridCommitPrev;
 function _j23(cx, cy, _j500, _j501) {
+return;
 push();
 noFill();
 stroke(0, 0, 0, 80);
@@ -3082,7 +3083,7 @@ density: _j506
 _j507.begin();
 background(255, 255, 255);
 _j507.end();
-background(canvasBackgroundColor[0], canvasBackgroundColor[1], canvasBackgroundColor[2]);
+clear();
 hw = width * 0.5;
 hh = height * 0.5;
 _j634 = hw;
@@ -3353,7 +3354,7 @@ window._fxDebug.avgFps = Math.round(window._fxDebug.totalFrames / ((performance.
 }
 const _j754 = (++_j752 % _j753 === 0);
 const _j755 = _j754 ? performance.now() : 0;
-background(canvasBackgroundColor[0], canvasBackgroundColor[1], canvasBackgroundColor[2]);
+clear();
 if (_j233.length > 0 && typeof window.metallicLightX !== 'undefined') {
 let t = millis() * 0.0001;
 window.metallicLightX = 0.5 + Math.sin(t * 0.7) * 0.3;
@@ -5257,6 +5258,7 @@ _j615.text('#' + (i + 1), _j886, _j887);
 _j615.pop();
 }
 function _j43() {
+return;
 _j613.clear();
 _j613.push();
 _j613.noFill();
@@ -11123,7 +11125,7 @@ _j514 = _j1('./shaders/base.vert', './shaders/typeMapEncode.frag');
 }
 function _j170() {
 const _j479 = typeof canvasBackgroundColor !== 'undefined' ? canvasBackgroundColor : [255, 255, 255];
-background(_j479[0], _j479[1], _j479[2]);
+clear();
 if (typeof oldBuffer !== 'undefined' && oldBuffer) {
 oldBuffer.begin();
 clear();
