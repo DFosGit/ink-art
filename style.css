@@ -35,7 +35,7 @@ canvas {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
-	border: 10px solid var(--canvas-bg, rgb(234, 234, 234));
+	border: none !important;
  	outline: 0px solid rgb(28, 28, 28);
 	/* ═══ Sidecar + Apple Pencil：canvas 游標改為小黑點（僅 artist 模式） ═══ */
 	cursor: url('assets/cursor-dot.png') 4 4, crosshair !important;
