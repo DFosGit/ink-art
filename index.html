@@ -123,9 +123,10 @@
       enumerable: true
     });
     
-    if(window.APP_MODE === 'collector'){
-      doDemo = true;
-      loopToggle = _snapshotMode ? 0 : 1;
+if(window.APP_MODE === 'collector'){ 
+doDemo = true; 
+window._demoCanvasBgColor = [255, 255, 255]; // <--- ВСТАВИТЬ ЭТО
+loopToggle = _snapshotMode ? 0 : 1;
 
       var _demoFile = './lib/0.json';
       // 優先：?recording= override → fxhash iteration → URL hash → fallback 0.json
