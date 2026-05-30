@@ -1,3 +1,7 @@
+:root {
+    --canvas-bg: transparent !important;
+}
+
 html,
 body {
 	margin: 0;
