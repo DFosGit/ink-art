@@ -3096,11 +3096,19 @@ a.action-btn:visited {
 	color: #00bcd4;
 }
 
-/* Делаем подложку прозрачной для встраивания */
-html, body {
+/* Делаем подложку полностью прозрачной для ВСЕХ режимов, включая collector */
+html, 
+body, 
+body[data-mode="collector"] {
     background: transparent !important;
+    background-color: transparent !important;
     background-image: none !important;
 }
-canvas {
+
+canvas, 
+body[data-mode="collector"] canvas {
     background: transparent !important;
+    background-color: transparent !important;
+    border: none !important; /* Убиваем серую рамку вокруг холста */
+    outline: none !important;
 }
