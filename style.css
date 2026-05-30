@@ -3095,3 +3095,12 @@ a.action-btn:visited {
 .flow-effect-toggle .toggle-input:checked~.toggle-text {
 	color: #00bcd4;
 }
+
+/* Делаем подложку прозрачной для встраивания */
+html, body {
+    background: transparent !important;
+    background-image: none !important;
+}
+canvas {
+    background: transparent !important;
+}
